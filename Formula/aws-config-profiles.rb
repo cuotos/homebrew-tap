@@ -1,4 +1,4 @@
-class StsAssumeRoleEnvVars < Formula
+class AwsConfigProfiles < Formula
   desc 'List the AWS profiles and account numbers in the aws config file'
   homepage 'https://github.com/cuotos/aws-config-profiles'
   version '0.0.1'
