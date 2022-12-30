@@ -1,9 +1,9 @@
 class AwsConfigProfiles < Formula
   desc 'List the AWS profiles and account numbers in the aws config file'
   homepage 'https://github.com/cuotos/aws-config-profiles'
-  version '0.0.5'
-  url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.0.5/aws-config-profiles_0.0.5_Darwin_x86_64.tar.gz"
-  sha256 'b1c22207df68157b8ea851db1dc19fb91280342e379f02942463a27ba2ba9195'
+  version '0.0.6'
+  url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.0.6/aws-config-profiles_0.0.6_Darwin_x86_64.tar.gz"
+  sha256 '64e4b55879f2398ba03c2a07d4899cce1c5230b131bd408c93d1d2fe17144dbd'
 
   def install
     bin.install 'aws-config-profiles'
