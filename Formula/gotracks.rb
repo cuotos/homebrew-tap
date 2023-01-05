@@ -1,4 +1,4 @@
-class Epoch < Formula
+class GoTracks < Formula
     desc 'Get guitar tabs and lyrics for current playing song'
     homepage 'https://github.com/cuotos/gotracks'
     version '0.0.1'
