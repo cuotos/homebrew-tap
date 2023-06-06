@@ -1,9 +1,9 @@
 class OutstandingPrs < Formula
   desc 'List PRs from github team that are waiting for reviews'
   homepage 'https://github.com/cuotos/outstanding-prs'
-  version '0.3.4'
-  url "https://github.com/cuotos/outstanding-prs/releases/download/v0.3.4/outstanding-prs_0.3.4_Darwin_x86_64.tar.gz"
-  sha256 '0dbac85723c1584dead5b32ba46141fdea13699d2097a1b83314c132e7b991db'
+  version '0.4.1'
+  url "https://github.com/cuotos/outstanding-prs/releases/download/v0.4.1/outstanding-prs_0.4.1_Darwin_x86_64.tar.gz"
+  sha256 '6aafc4407b5116af155b219899cdbf4e89eb7aa113e8959fdaa3c7d2448a6ea1'
 
   def install
     bin.install 'outstanding-prs'
