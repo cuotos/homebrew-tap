@@ -5,23 +5,23 @@
 class Gohexwordlist < Formula
   desc ""
   homepage ""
-  version "0.0.3"
+  version "1.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "a4c2e589252daf78073c826392625a10d3699143e3d098d43953a3440c93325b"
+      url "https://github.com/cuotos/sts-assume-role-env-vars/releases/download/v1.0.9/sts-assume-role-env-vars_1.0.9_Darwin_x86_64.tar.gz"
+      sha256 "f579de5123ac193cbe2ba606dbd34cba10aa1b1105bae07e635bb3adcb40d7cd"
 
       def install
-        bin.install "gohexwordlist"
+        bin.install "sts-assume-role-env-vars"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Darwin_arm64.tar.gz"
-      sha256 "bf572ebe78436e8473d79964aa112e61e6998d2c422695cb758a78416d761cd9"
+      url "https://github.com/cuotos/sts-assume-role-env-vars/releases/download/v1.0.9/sts-assume-role-env-vars_1.0.9_Darwin_arm64.tar.gz"
+      sha256 "6babe43e171c4adb3312cd3562ac3163157015971d649ff26c2e98ed8ecce190"
 
       def install
-        bin.install "gohexwordlist"
+        bin.install "sts-assume-role-env-vars"
       end
     end
   end
@@ -29,21 +29,21 @@ class Gohexwordlist < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Linux_x86_64.tar.gz"
-        sha256 "cbb9a5c13acae87a99461a77bc2c932b169ddcacf751b966de749ab48d2554f1"
+        url "https://github.com/cuotos/sts-assume-role-env-vars/releases/download/v1.0.9/sts-assume-role-env-vars_1.0.9_Linux_x86_64.tar.gz"
+        sha256 "3757a79256f2c788586c54659279b0369f52fa1fc5ae04bbbd0170e5db8ef851"
 
         def install
-          bin.install "gohexwordlist"
+          bin.install "sts-assume-role-env-vars"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Linux_arm64.tar.gz"
-        sha256 "03c324c9b2562be792bf0e7ecb6935fe58b4a05125c7698a8ff24d3c76f611ad"
+        url "https://github.com/cuotos/sts-assume-role-env-vars/releases/download/v1.0.9/sts-assume-role-env-vars_1.0.9_Linux_arm64.tar.gz"
+        sha256 "ffd680fca7c20f9f947ddcd1cc2007f33d24885a5627d02521642f89a0c842bd"
 
         def install
-          bin.install "gohexwordlist"
+          bin.install "sts-assume-role-env-vars"
         end
       end
     end
