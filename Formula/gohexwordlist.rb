@@ -5,20 +5,20 @@
 class Gohexwordlist < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.3"
 
   on_macos do
-    on_intel do
-      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.1/gohexwordlist_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "55b1eca40fae8d8383f3028eaaf277d28513f1148c66ab4e5634a9a93539dbd9"
+    if Hardware::CPU.intel?
+      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Darwin_x86_64.tar.gz"
+      sha256 "a4c2e589252daf78073c826392625a10d3699143e3d098d43953a3440c93325b"
 
       def install
         bin.install "gohexwordlist"
       end
     end
-    on_arm do
-      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.1/gohexwordlist_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "987ca4f213fe54b213e1c227d395512f07505faeb1a368aecdd2b44812e8b5b7"
+    if Hardware::CPU.arm?
+      url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Darwin_arm64.tar.gz"
+      sha256 "bf572ebe78436e8473d79964aa112e61e6998d2c422695cb758a78416d761cd9"
 
       def install
         bin.install "gohexwordlist"
@@ -27,20 +27,20 @@ class Gohexwordlist < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.1/gohexwordlist_0.0.1_Linux_x86_64.tar.gz"
-        sha256 "683b632e7201c68e5f03e7b2cdb34836e4ad9c64accffcd682d54b4940f64715"
+        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Linux_x86_64.tar.gz"
+        sha256 "cbb9a5c13acae87a99461a77bc2c932b169ddcacf751b966de749ab48d2554f1"
 
         def install
           bin.install "gohexwordlist"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.1/gohexwordlist_0.0.1_Linux_arm64.tar.gz"
-        sha256 "da2b65130a6c19d61a3e6d405c622cfaeea2e89bd42c26a6985c17f100f10a9e"
+        url "https://github.com/cuotos/gohexwordlist/releases/download/v0.0.3/gohexwordlist_0.0.3_Linux_arm64.tar.gz"
+        sha256 "03c324c9b2562be792bf0e7ecb6935fe58b4a05125c7698a8ff24d3c76f611ad"
 
         def install
           bin.install "gohexwordlist"
