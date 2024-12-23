@@ -5,20 +5,20 @@
 class AwsConfigProfiles < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.1/aws-config-profiles_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "9b637b7819d2839306197e2c4fdf2e6e75c09c76448926b7b8e8bfb8304e1338"
+      url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.2/aws-config-profiles_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "7f012ca3cc17fbf9e4b0d82c1313fa7e6d47f54e80556a51d4438211c50c5cac"
 
       def install
         bin.install "aws-config-profiles"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.1/aws-config-profiles_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "af09c204d0f79ffcdeb034c8fde5fcca69f94fd79acaa7fac2c7b2e8d96feb25"
+      url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.2/aws-config-profiles_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "4bd845844f4a006c03412c8095aa2f8879edd9d0ea5a5f0dd057170c0e4cf01d"
 
       def install
         bin.install "aws-config-profiles"
@@ -29,8 +29,8 @@ class AwsConfigProfiles < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.1/aws-config-profiles_0.1.1_Linux_x86_64.tar.gz"
-        sha256 "fade70992224bae12a073191effbe894de4b39e6c2b52865b2136fca8f8b65fb"
+        url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.2/aws-config-profiles_0.1.2_Linux_x86_64.tar.gz"
+        sha256 "4d0fb49ccccda172388ccda7262f82ac6e9afe46deafabb492393f80bbeb51aa"
 
         def install
           bin.install "aws-config-profiles"
@@ -39,8 +39,8 @@ class AwsConfigProfiles < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.1/aws-config-profiles_0.1.1_Linux_arm64.tar.gz"
-        sha256 "03be2af8162f08ab0c471dffaa363f29f5cc9e23a3b9d7c7570966c21edd0c67"
+        url "https://github.com/cuotos/aws-config-profiles/releases/download/v0.1.2/aws-config-profiles_0.1.2_Linux_arm64.tar.gz"
+        sha256 "f67a511331373be77a4774e79b93b49b9add6cab7b177eb8c3b1077055aa138d"
 
         def install
           bin.install "aws-config-profiles"
