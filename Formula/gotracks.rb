@@ -5,20 +5,20 @@
 class Gotracks < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cuotos/gotracks/releases/download/v0.1.0/gotracks_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "edd07e665b2992cca6b8752d597c3bccc8aef1ec9b926c2fc11c887578e0a273"
+      url "https://github.com/cuotos/gotracks/releases/download/v0.1.1/gotracks_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "8b8f4f1fdf47906ffeae2e256576a40cae98e59d39612476f4c689f3936d2497"
 
       def install
         bin.install "gotracks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cuotos/gotracks/releases/download/v0.1.0/gotracks_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "7827484c0a98d49737da4f6812a085f488d9a6ab45b20b7e385d806c1b0f1214"
+      url "https://github.com/cuotos/gotracks/releases/download/v0.1.1/gotracks_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "daac5957eba42e9d0e0fc0f3c67abe33dc1fc1db0e58cd47329a6e5decd41ba1"
 
       def install
         bin.install "gotracks"
@@ -29,8 +29,8 @@ class Gotracks < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gotracks/releases/download/v0.1.0/gotracks_0.1.0_Linux_x86_64.tar.gz"
-        sha256 "971ea1dde42fc04116977e4495f32873ad3014df400f137d166a9aa57529b951"
+        url "https://github.com/cuotos/gotracks/releases/download/v0.1.1/gotracks_0.1.1_Linux_x86_64.tar.gz"
+        sha256 "8099dce28ef11151a7721bf0070af78668ede5eabca085bdf9b93f6c83f325d6"
 
         def install
           bin.install "gotracks"
@@ -39,8 +39,8 @@ class Gotracks < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cuotos/gotracks/releases/download/v0.1.0/gotracks_0.1.0_Linux_arm64.tar.gz"
-        sha256 "40e0906dad5813d01a3c88dea543ceca86266908f57e97d1556c1bdacc917621"
+        url "https://github.com/cuotos/gotracks/releases/download/v0.1.1/gotracks_0.1.1_Linux_arm64.tar.gz"
+        sha256 "442ee63becff53321a378c7b7fa793547b002ea22a619ae6cfaade04c21b61da"
 
         def install
           bin.install "gotracks"
