@@ -5,20 +5,20 @@
 class EcsExecPf < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.0/ecs-exec-pf_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "3d1504001c81d2441c46b14cd505cec1015cfaafc9664f342ac811c16722a9c1"
+      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.1/ecs-exec-pf_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "7a5475785c8d10d89a7d5ed5e86cea9397a9a05aa4996509dff9885c65e9f8c5"
 
       def install
         bin.install "ecs-exec-pf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.0/ecs-exec-pf_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "dca572973339caaaa3e7437900c8040161ab5397d906298a11021e6e054d77ee"
+      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.1/ecs-exec-pf_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "b08f536a0388bce2695f6adc8cc885098ad48a0654d6ed5730214f2378ce4372"
 
       def install
         bin.install "ecs-exec-pf"
@@ -28,15 +28,15 @@ class EcsExecPf < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.0/ecs-exec-pf_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "196d9a8390cd9e16a3cfac2ffaface1b0be8d46df758a33632d6dc70cc8556ec"
+      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.1/ecs-exec-pf_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "3e16386e1102120b4352099f6f39d2b2884efbcb69738ddd063cc32e425c8397"
       def install
         bin.install "ecs-exec-pf"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.0/ecs-exec-pf_0.2.0_Linux_arm64.tar.gz"
-      sha256 "9fba8088d035bc4622d1f4ff1ca45eb71bb5b78614186183d52819ae0815c0ec"
+      url "https://github.com/cuotos/ecs-exec-pf/releases/download/v0.2.1/ecs-exec-pf_0.2.1_Linux_arm64.tar.gz"
+      sha256 "10103fa023f0ed054cfe563d1d03fd077c99222e4e2b0a02c682be2f2f510986"
       def install
         bin.install "ecs-exec-pf"
       end
