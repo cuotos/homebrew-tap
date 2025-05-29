@@ -5,20 +5,20 @@
 class Tfcopen < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.1/tfcopen_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "445bcd35d1c5cbffe794ded777d12c54af02a5f1029cfba38e2f6423ece022e6"
+      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.2/tfcopen_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "4f6c55abbb6779f93fcd20472676d2222ff1edea289bbfda16aae227dd762586"
 
       def install
         bin.install "tfcopen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.1/tfcopen_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "3638e339f5b173eeeca57d650053c37e0a7def14fd001418b6b6cdd86f3db439"
+      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.2/tfcopen_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "76939a6db733f1a11e000557c0f7131e0165026c263e2f46299442c69ffbb177"
 
       def install
         bin.install "tfcopen"
@@ -28,15 +28,15 @@ class Tfcopen < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.1/tfcopen_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "635ab9692626a27b075ce24545de11af4f793b5d67c932d393c861147a836a06"
+      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.2/tfcopen_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "d06088b753dc0fbd3be39f24ace5ebf0aa3dd9f8ee5a0a86c705e4ad2e3485b6"
       def install
         bin.install "tfcopen"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.1/tfcopen_0.0.1_Linux_arm64.tar.gz"
-      sha256 "7d1fc3122b1008cdebfdfdac5dabdee0ca80a1405cd2e08f9471d8775310ac39"
+      url "https://github.com/cuotos/tfcopen/releases/download/v0.0.2/tfcopen_0.0.2_Linux_arm64.tar.gz"
+      sha256 "07935a31d241e9462271b611626e2a2415ea9c6bccbb16fb264e9b95bc39329a"
       def install
         bin.install "tfcopen"
       end
